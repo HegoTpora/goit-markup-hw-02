@@ -8,6 +8,26 @@
   --section-bcg-color: #f5f4fa;
   --footer-bcg-color: #2f303a;
 }
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul{
+  margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
 body {
   background-color: var(--white);
   color: var(--primary-text-color);
@@ -16,6 +36,9 @@ body {
 }
 .list {
   list-style: none;
+}
+.list-filters{
+  margin-bottom: 56px;
 }
 .hero,
 .footer {
@@ -60,6 +83,10 @@ body {
   color: var(--accent-color);
   text-decoration: none;
 }
+.current{
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
@@ -78,6 +105,7 @@ body {
   color: var(--accent-color);
 }
 .hero-title {
+  margin-bottom: 30px;
   color: var(--white);
   font-weight: 900;
   font-size: 44px;
@@ -87,13 +115,15 @@ body {
   text-transform: uppercase;
 }
 .section-title {
+  margin-bottom: 50px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
 }
-.features .title {
+.title-features {
+  margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -101,17 +131,25 @@ body {
   text-transform: uppercase;
 }
 .team .title {
+  margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
 }
 .portfolio-title {
+  margin-bottom: 4px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+}
+.team-icon{
+  margin-bottom: 30px;
+}
+.portfolio-icon{
+  margin-bottom: 20px;
 }
 .visually-hidden {
   position: absolute;
@@ -141,10 +179,12 @@ body {
   line-height: 1.88;
 }
 .button {
+  display: inline-block;
   background-color: var(--section-bcg-color);
   color: var(--title-text-color);
   cursor: pointer;
   font-family: inherit;
+  border: transparent;
 }
 .button.primary {
   background-color: var(--accent-color);
@@ -155,12 +195,17 @@ body {
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 216px;
+  text-align: center;
 }
 .button.secondary {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   border-radius: 4px;
+  padding: 6px 22px;
+  text-align: center;
 }
 .button:hover,
 .button:focus {
@@ -171,6 +216,23 @@ body {
 .button.primary:focus {
   background-color: #188CE8;
   color: var(--white);
+}
+.hero.section{
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.features.section {
+  padding-top: 94px;
+}
+.examples.section,
+.team.section,
+.portfolio.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .address .link.adrs {
   color: var(--white);
