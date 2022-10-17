@@ -320,19 +320,6 @@ padding-right: 15px;
 .list.icons .item:last-child {
   margin-right: 0;
 }
-.icons .button {
-    display: flex;
-    padding: 0;
-    border-radius: 50%;
-    border: none;
-    background-color: var(--white);
-    min-width: 44px;
-    min-height: 44px;
-    box-shadow: none;
-    justify-content: center;
-    align-items: center;
-    color: #AFB1B8;
-}
 .icons .button:hover,
 .icons .button:focus {
   color: var(--white);
@@ -411,6 +398,19 @@ padding-right: 15px;
   background-color: #188CE8;
   color: var(--white);
 }
+.icons .button {
+  display: flex;
+  padding: 0;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--white);
+  min-width: 44px;
+  min-height: 44px;
+  box-shadow: none;
+  justify-content: center;
+  align-items: center;
+  color: #AFB1B8;
+}
 .list.portfolio .item .link{
   text-decoration: none;
 }
@@ -473,6 +473,7 @@ padding-right: 15px;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
+  margin-right: 70px;
 }
 .address .link {
   color: var(--link-color);
@@ -515,4 +516,13 @@ padding-right: 15px;
 }
 .list.social-links {
   display: flex;
+  margin-left: 0;
+}
+.social-links .section-title {
+  text-align: left;
+  color: var(--white);
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 1.14;
+  margin-bottom: 20px;
 }
