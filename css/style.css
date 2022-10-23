@@ -510,8 +510,9 @@ padding-right: 15px;
 }
 .container.address {
   display: flex;
+  align-items: baseline;
 }
-.section-address {
+.footer-block {
   margin-right: 70px;
 }
 .logo {
