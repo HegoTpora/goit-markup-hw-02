@@ -285,6 +285,7 @@ position: relative;
     bottom: 0;
     left: 0;
     background-color: var(--accent-color);
+    border-radius: 2px;
 }
 .portfolio-link-thumb {
   position: relative;
@@ -298,6 +299,7 @@ display: inline-block;
   bottom: 0;
   left: 0;
   background-color: var(--accent-color);
+  border-radius: 2px;
 }
 .list.examples{
   display: flex;
