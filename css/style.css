@@ -339,11 +339,6 @@ body {
 
 	color: #212121;
 }
-.modal-close-icon {
-}
-
-.contact-form {
-}
 .contact-form-field {
 	position: relative;
 }
@@ -371,7 +366,9 @@ body {
   margin-left: 40px;
   margin-bottom: 10px;
 }
-
+.contact-form-name:focus {
+  border-color: var(--accent-color);
+}
 .contact-form-icon {
 	position: absolute;
 	left: 52px;
@@ -382,7 +379,9 @@ body {
 	transform: translateY(-50%);
 	pointer-events: none;
 }
-
+.contact-form-name:focus+.contact-form-icon {
+  fill: var(--accent-color);
+}
 .contact-icon-position {
   margin-top: 10px;
   margin-bottom: 4px;
@@ -408,10 +407,9 @@ body {
 }
 
 .contact-form-accept {
+  display: block;
   margin-bottom: 30px;
-}
-.contact-form-checkbox {
-	outline: 2px solid red;
+  margin-left: 51px;
 }
 
 .contact-form-icon-accept {
@@ -440,8 +438,12 @@ body {
 
 .contact-form-text {
 	user-select: none;
+  font-size: 14px;
+  line-height: calc(24 / 14);
 }
-.contact-form-button {
+
+.contact-form-link {
+color: var(--accent-color);
 }
 
 .list.examples {
