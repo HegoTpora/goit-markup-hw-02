@@ -212,7 +212,7 @@
           </div>
         </address>
           <div class="social-links">
-            <p class="section-title">приєднуйтесь</p>
+            <p class="footer-span">приєднуйтесь</p>
             <ul class="list social-links">
               <li class="item">
                   <a href="" class="button">
@@ -239,6 +239,20 @@
                   </svg></a>
                 </li>
           </ul>
+        </div>
+        <div class="subscription">
+          <p class="footer-span">Підпишіться на розсилку</p>
+            <form class="subscription-form" name="subscription-form">
+                <label for="user_email" class="subscription-form-field">
+                    <span class="subscription-form-box">
+                        <input class="subscription-form-name" type="email" name="email" id="user_email" placeholder="E-mail" autofocus required
+                            minlength="10" maxlength="25" title="Enter your E-mail with min length 10 symbol">
+                    </span>
+                </label>
+             <button class="subscription-form-button" type="submit" disabled><span>Підписатися</span><svg class="send-icon">
+              <use href="./images/symbol-defs.svg#icon-send"></use>
+             </svg></button>
+            </form>
         </div>
         </div>
     </footer>

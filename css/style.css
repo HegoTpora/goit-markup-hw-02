@@ -794,7 +794,7 @@ color: var(--accent-color);
 }
 .subscription-form-button {
   display: flex;
-   margin: 0 auto;
+  margin: 0 auto;
   background-color: var(--accent-color);
   color: var(--white);
   font-weight: 700;
