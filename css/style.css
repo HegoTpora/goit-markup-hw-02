@@ -794,6 +794,18 @@ color: var(--accent-color);
 }
 .subscription-form-button {
   display: flex;
+   margin: 0 auto;
+  background-color: var(--accent-color);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 0px 28px;
+  min-width: 200px;
+  text-align: center;
   align-items: center;
 }
 .send-icon {
