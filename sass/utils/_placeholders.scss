@@ -1,0 +1,15 @@
+%section-title {
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42px / 36px);
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+%align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
