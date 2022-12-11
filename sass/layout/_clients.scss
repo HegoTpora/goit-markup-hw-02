@@ -1,10 +1,14 @@
-.clients__list {
+.clients {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
 .clients__item {
-    width: 170px;
+    width: 210px;
     height: 92px;
 }
 
@@ -33,5 +37,17 @@
     .clients__link:hover &,
     .clients__link:focus & {
         fill: var(--color-accent);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .clients__item {
+        width: 226px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .clients__item {
+        width: 170px;
     }
 }

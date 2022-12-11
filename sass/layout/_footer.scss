@@ -1,28 +1,32 @@
-.page-footer {
+.footer {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--background-color-dark);
     color: var(--color-invert);
 }
 
-.page-footer__container {
+.footer__container {
     display: flex;
-    align-items: baseline;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .footer__logo {
-    margin-bottom: 20px;
     color: var(--color-invert);
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .address {
-    margin-right: 70px;
+    margin-bottom: 60px;
 }
 
 .address__list {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    text-align: center;
 }
 
 .address__item {
@@ -45,26 +49,27 @@
     }
 }
 
-.page-footer__social {
-    margin-right: 93px;
+.footer__social {
+    margin-bottom: 60px;
 }
 
-.page-footer__title {
+.footer__title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    text-align: center;
 
     margin-bottom: 20px;
 }
 
-.page-footer__social-links {
+.footer__social-links {
     display: flex;
     gap: 10px;
 }
 
-.page-footer__social-link {
+.footer__social-link {
     border-radius: 50%;
     background-color: var(--background-color-social_footer);
     width: 44px;
@@ -81,18 +86,27 @@
     }
 }
 
-.page-footer__social-icon {
+.footer__social-icon {
     fill: var(--color-invert);
 }
 
-.page-footer__news-form {
-    display: flex;
+.footer__news {
+    width: 100%;
 }
 
-.page-footer__news-mail {
+.footer__news-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__news-mail {
     height: 50px;
-    width: 358px;
-    margin-right: 12px;
+    width: 100%;
+    max-width: 450px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
     padding: 16px 15px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -119,6 +133,61 @@
     }
 }
 
-.page-footer__news-button {
+.footer__news-button {
     gap: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .footer__container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer__container {
+        flex-wrap: nowrap;
+    }
+
+    .address {
+        flex-grow: 1;
+        margin-right: 70px;
+        margin-bottom: 0;
+    }
+
+    .footer__logo {
+        text-align: start;
+    }
+
+    .address__list {
+        text-align: start;
+        margin-bottom: 0px;
+    }
+
+    .footer__social {
+        margin-right: 93px;
+        margin-bottom: 0;
+    }
+
+    .footer__title {
+        text-align: start;
+    }
+
+    .footer__news {
+        width: auto;
+
+    }
+
+    .footer__news-form {
+        flex-direction: row;
+    }
+
+    .footer__news-mail {
+        width: 358px;
+        margin-right: 12px;
+    }
 }
